@@ -9,9 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link {%if request.path == '/' %} active {% endif %}" aria-current="page" href="{% url 'home' %}">Ana Sayfa</a>
-                <a class="nav-link {%if request.path == '/about/' %} active {% endif %}" href="{% url 'about_us' %}">Hakkimizda</a>
-                <a class="nav-link {%if request.path == '/mission/' %} active {% endif %}" href="{% url 'mission' %}">Vizyonumuz</a>
-                <a class="nav-link {%if request.path == '/contact/' %} active {% endif %}" href="{% url 'contact' %}">Iletisim</a>
+                <a class="nav-link {%if request.path == '/about/' %} active {% endif %}" href="/about/">Hakkimizda</a>
+                <a class="nav-link {%if request.path == '/product/' %} active {% endif %}" href="/product/">Urunlerimiz</a>
+                <a class="nav-link {%if request.path == '/mission/' %} active {% endif %}" href="/mission/">Vizyonumuz</a>
+                <a class="nav-link {%if request.path == '/contact/' %} active {% endif %}" href="/contact/">Iletisim</a>
             </div>
         </div>
     </div>

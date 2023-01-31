@@ -19,6 +19,8 @@ from django.http import HttpResponse
 
 
 urlpatterns = [
+    path('product/', include('product.urls')),
     path('', include('page.urls')),
     path('admin/', admin.site.urls),
+
 ]
