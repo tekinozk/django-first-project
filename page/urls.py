@@ -1,0 +1,17 @@
+from django.urls import path
+from page.views import (
+    home,
+    about,
+    contact,
+    mission,
+)
+    
+
+
+urlpatterns = [
+    path('', home,name="home"),
+    path("about/",about,name="about_us"),
+    path("contact/",contact,name="contact"),
+    path("mission/",mission,name="mission" ),
+
+]
